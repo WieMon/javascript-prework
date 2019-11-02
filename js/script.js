@@ -31,18 +31,18 @@ printMessage('Twój ruch to: ' + playerMove);
 
 if(computerMove == playerMove){
     printMessage('Remis!');
-}   else if (computerMove == 'kamień' && playerMove == 'papier'){
+} else if (computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Ty wygrywasz!');
-}   else if (computerMove == 'kamień' && playerMove == 'nożyce'){
+} else if (computerMove == 'kamień' && playerMove == 'nożyce'){
     printMessage('Przegrywasz!');
-}   else if (computerMove == 'papier' && playerMove == 'kamień'){
+} else if (computerMove == 'papier' && playerMove == 'kamień'){
     printMessage('Przegrywasz!');
-}   else if (computerMove == 'papier' && playerMove == 'nożyce'){
+} else if (computerMove == 'papier' && playerMove == 'nożyce'){
     printMessage('Ty wygrywasz!');
-}   else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+} else if (computerMove == 'nożyce' && playerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
-}   else if (computerMove == 'nożyce' && playerMove == 'papier'){
+} else if (computerMove == 'nożyce' && playerMove == 'papier'){
     printMessage('Przegrywasz!');
-}   else {
+} else {
     printMessage('Ups - wybierz swój ruch');
 }
