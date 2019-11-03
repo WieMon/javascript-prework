@@ -16,35 +16,37 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 
 let computerMove = getMoveName(randomNumber);
 
-printMessage('Mój ruch to: ' + computerMove);
-
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
 console.log('Gracz wpisał: ' + playerInput);
 
 let playerMove = getMoveName(playerInput);
 
-printMessage('Twój ruch to: ' + playerMove);
+let argComputerMove = computerMove;
 
-console.log('moves:', computerMove, playerMove)
+let argPlayerMove = playerMove;
 
-function displayResult(computerMove, playerMove){
-} if(computerMove == playerMove){
+printMessage('Zagrałem ' + argComputerMove + ' a Ty ' + argPlayerMove + '.');
+
+console.log('moves:', argComputerMove, argPlayerMove)
+
+function displayResult(argComputerMove, argPlayerMove){
+} if(argComputerMove == argPlayerMove){
     printMessage('Remis!');
-} else if (computerMove == 'kamień' && playerMove == 'papier'){
+} else if (argComputerMove == 'kamień' && argPlayerMove == 'papier'){
     printMessage('Ty wygrywasz!');
-} else if (computerMove == 'kamień' && playerMove == 'nożyce'){
+} else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
     printMessage('Przegrywasz!');
-} else if (computerMove == 'papier' && playerMove == 'kamień'){
+} else if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
     printMessage('Przegrywasz!');
-} else if (computerMove == 'papier' && playerMove == 'nożyce'){
+} else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
     printMessage('Ty wygrywasz!');
-} else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+} else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
-} else if (computerMove == 'nożyce' && playerMove == 'papier'){
+} else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
     printMessage('Przegrywasz!');
 } else {
     printMessage('Ups - wybierz swój ruch');
 }
 
-displayResult (computerMove, playerMove)
+displayResult (argComputerMove, argPlayerMove)
