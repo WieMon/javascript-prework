@@ -41,25 +41,26 @@ function playGame (playerInput) {
   console.log('moves:', argComputerMove, argPlayerMove)
 
   function displayResult(argComputerMove, argPlayerMove){
-  } if(argComputerMove == argPlayerMove){
+    if(argComputerMove == argPlayerMove){
     printMessage('Remis!');
-  } else if (argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+    } else if (argComputerMove == 'kamień' && argPlayerMove == 'papier'){
     printMessage('Ty wygrywasz!');
-  } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
+    } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
     printMessage('Przegrywasz!');
-  } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
+    } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
     printMessage('Przegrywasz!');
-  } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
+    } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
     printMessage('Ty wygrywasz!');
-  } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
+    } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
-  } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+    } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
     printMessage('Przegrywasz!');
-  } else {
+    } else {
     printMessage('Ups - wybierz swój ruch');
-  }
+    }
+  } 
 
-  displayResult (argComputerMove, argPlayerMove)
+displayResult (argComputerMove, argPlayerMove);
 }
 
 document.getElementById('play-rock').addEventListener('click', function() {
