@@ -1,4 +1,4 @@
-function playGame (playerInput) {
+{function playGame (playerInput) {
 
   playerInput == 1;
   playerInput == 2;
@@ -20,17 +20,17 @@ function playGame (playerInput) {
   
  
 
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
 
   console.log('Wylosowana liczba to: ' + randomNumber);
 
-  let computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
 
   /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
 
   console.log('Gracz wpisał: ' + playerInput);
 
-  let playerMove = getMoveName(playerInput);
+  const playerMove = getMoveName(playerInput);
 
   /*let argComputerMove = computerMove;
 
@@ -72,3 +72,4 @@ document.getElementById('play-paper').addEventListener('click', function() {
 document.getElementById('play-scissors').addEventListener('click', function() {
   playGame(3);
 })
+}
